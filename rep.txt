@@ -1,5 +1,0 @@
-<div class=" messages__item_grup ">
-                            <label class="sub_title">Email</label>
-                            <div class="messages__item form_style">
-                                Hi... What is it? I'm a front-end developer, yay!
-                            </div>  
