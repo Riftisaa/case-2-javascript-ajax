@@ -7,7 +7,7 @@ foreach ($messages as $message) {
     $content = isset($parts[2]) ? trim($parts[2]) : '';
 
     // Display message content without timestamp
-    //  echo '<div class="chat sender">' . $name . ': ' . $content . '</div>';
+    
 
 
      echo '<div class=" messages__item_grup "> <label class="sub_title">' . $name . '</label> <div class="messages__item form_style">' . $content . '</div> </div>  ' ;

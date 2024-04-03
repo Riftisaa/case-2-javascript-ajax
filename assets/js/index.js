@@ -62,7 +62,7 @@ $(document).ready(function() {
         var bubbleClass = (username === $('#senderUsername').text().trim()) ? 'sent' : 'received';
 
         // Add message bubble with appropriate class
-        var bubble = $('<div class="chat ' + bubbleClass + '"></div>').text(message);
+        // var bubble = $('<div class="chat ' + bubbleClass + '"></div>').text(message);
         chatBox.append(bubble);
         }
     }

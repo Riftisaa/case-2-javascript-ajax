@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/chat.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/typing.css">
     <title>Chatbox</title>
 </head>
@@ -36,6 +36,8 @@
                 </div>
                 <div class="chatbox__messages">
                     <div class="chat-box" id="chatBox">
+
+                    //chat muncul di sini
                        
                     </div>
                 </div>
@@ -86,8 +88,8 @@
 
     </div>
     <script src="./assets/js/Chat.js"></script>
-    <script src="./app.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
