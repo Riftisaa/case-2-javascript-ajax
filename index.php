@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/chat.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/typing.css">
+    <link rel="stylesheet" href="./assets/css/headerFooter.css">
     <title>Chatbox</title>
 </head>
 <body>
@@ -22,6 +24,8 @@
     $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
 
     ?>
+
+    
     <div class="container">
         <div class="chatbox">
             <div class="chatbox__support">
@@ -66,6 +70,7 @@
             </button>
         </form>
 
+
         <?php
             if(isset($_POST['logout']))
             {
@@ -87,9 +92,13 @@
 
 
     </div>
+
+    
     <script src="./assets/js/Chat.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

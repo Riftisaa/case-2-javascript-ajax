@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body>
+
+    <nav class="navbar mathNavbar">
+    <?php include 'header.php' ?>
+   </nav>
     <div class="container-fluid containerx">
         <div class="containery">
             <div class="form_area">
@@ -51,7 +55,8 @@
     ?>
 
 
-    <footer>
+<footer>
+    <?php include 'footer.php' ?>
     </footer>
 
 
