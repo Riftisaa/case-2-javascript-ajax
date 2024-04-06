@@ -58,12 +58,6 @@ $(document).ready(function() {
                 }
             });
 
-            var chatBox = $('#chatBox');
-        var bubbleClass = (username === $('#senderUsername').text().trim()) ? 'sent' : 'received';
-
-        // Add message bubble with appropriate class
-        // var bubble = $('<div class="chat ' + bubbleClass + '"></div>').text(message);
-        chatBox.append(bubble);
         }
     }
 
