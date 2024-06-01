@@ -31,7 +31,7 @@ $(document).ready(function() {
     // Function to load chat messages
     function loadChat() {
         $.ajax({
-            url: 'fetching_data.php',
+            url: '../model/loadMessage.php',
             type: 'GET',
             success: function(response) {
                 $('#chatBox').html(response);
@@ -44,12 +44,13 @@ $(document).ready(function() {
     function sendMessage() {
         var message = $('#messageInput').val().trim();
         var username = $('#username').text().trim();
+        var email = $('#email').text().trim();
 
         if (message !== '' && username !== '') {
             $.ajax({
-                url: 'send.php',
+                url: '../model/sendNew.php',
                 type: 'POST',
-                data: { message: message, username: username },
+                data: { message: message, username: username,email:email },
                 success: function(response) {
                     $('#messageInput').val('');
                     loadChat();
