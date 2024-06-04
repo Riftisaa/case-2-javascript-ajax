@@ -31,7 +31,7 @@ $(document).ready(function() {
     // Function to load chat messages
     function loadChat() {
         $.ajax({
-            url: '../model/loadMessage.php',
+            url: 'http://localhost/chat2/case-2-javascript-ajax/index.php/controller/read',
             type: 'GET',
             success: function(response) {
                 $('#chatBox').html(response);
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
         if (message !== '' && username !== '') {
             $.ajax({
-                url: '../model/sendNew.php',
+                url: 'http://localhost/chat2/case-2-javascript-ajax/index.php/controller/write',
                 type: 'POST',
                 data: { message: message, username: username,email:email },
                 success: function(response) {
